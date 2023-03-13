@@ -8,4 +8,4 @@ SINA Health, Education & Welfare Trust Employee Portal Front End Rebuild
 
 ## 🔗 LIVE Link
 
-[Click Here To See Live](https://katherineoelsner.com/)
+[Click Here To See Live](https://sina-ess.netlify.app/)
