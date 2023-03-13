@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Log History</title>
+
+    <!-- Bootstrap Icons Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-section">
+      <div class="container">
+        <div
+          class="main-header d-flex align-items-center justify-content-between text-white p-2"
+        >
+          <div class="user-name">
+            <a href="#"
+              ><h6><i class="bi bi-person"></i>User Name</h6></a
+            >
+          </div>
+          <div class="sina-logo">
+            <img src="assets/img/logo.png" alt="Logo" class="sina-logo" />
+          </div>
+          <div class="log-out">
+            <a href="#"
+              ><h6><i class="bi bi-box-arrow-in-left"></i>Logout</h6></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container">
+        <button
+          class="navbar-toggler pull-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center nevmenu"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="visitlogform.html">Visit Log Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="visitloghistory.html"
+                >Visit Log History</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Leave Application Form
+              </a>
+              <ul class="dropdown-menu text-center">
+                <li>
+                  <a class="dropdown-item" href="shortdayleave.html"
+                    >Short Day Leave</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fulldayleave.html"
+                    >Full Day Leave</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="approval.html">Approval</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="status.html">Status</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Policies & SOPs
+              </a>
+              <ul class="dropdown-menu text-center">
+                <li>
+                  <a class="dropdown-item" href="covidleavepolicy.html"
+                    >Covid Leave Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="maternityleave.html"
+                    >Maternity Leave</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="assetequipment.html"
+                    >Asset-Equipment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="leavepolicy.html"
+                    >Leave Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="employeeconductdiscipline.html"
+                    >Employee Conduct and Discipline</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="compensatoryleavepolicy.html"
+                    >Compensatory leave Policy</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vehicalrequest.html">Vehical Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vehicalrequeststatus.html"
+                >Vehical Request Status</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Visit Log History -->
+    <div class="visit-log-history bg-light m-3 border border-dark">
+      <div class="container">
+        <h1 class="text-center p-2">VISIT LOG HISTORY</h1>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6">
+            <label class="fw-bold">From Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <label class="fw-bold">To Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="conatiner p-5">
+        <div class="overflow-scroll border border-dark p-1">
+          <table class="table text-center">
+            <thead>
+              <tr class="table-danger">
+                <th scope="col">Emp Code</th>
+                <th scope="col">Emp Name</th>
+                <th scope="col">Visit Location</th>
+                <th scope="col">Visit Date</th>
+                <th scope="col">Time Start</th>
+                <th scope="col">Time End</th>
+                <th scope="col">Purpose Of Visit</th>
+                <th scope="col">Post Visit Report</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-secondary">
+                <td>1234</td>
+                <td>Syed Fawad</td>
+                <td>Nazimabad</td>
+                <td>31-Aug-2022</td>
+                <td>14:00</td>
+                <td>17:00</td>
+                <td>Meeting With Vendor</td>
+                <td>Purchasing of good for the Hospital</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>1234</td>
+                <td>Syed Fawad</td>
+                <td>Nazimabad</td>
+                <td>31-Aug-2022</td>
+                <td>14:00</td>
+                <td>17:00</td>
+                <td>Meeting With Vendor</td>
+                <td>Purchasing of good for the Hospital</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>1234</td>
+                <td>Syed Fawad</td>
+                <td>Nazimabad</td>
+                <td>31-Aug-2022</td>
+                <td>14:00</td>
+                <td>17:00</td>
+                <td>Meeting With Vendor</td>
+                <td>Purchasing of good for the Hospital</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination-tab">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">2</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
